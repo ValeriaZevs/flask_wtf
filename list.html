@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block block_1 %}
+<h1>Список профессий</h1>
+{% set profs = ['Врач', 'Пилот', 'Инженер', 'Командир'] %}
+{% if stream == "ol" %}
+        <ol>
+            {% for prof in profs %}
+                <li style="font-size: 30px">{{ prof }}</li>
+            {% endfor %}
+        </ol>
+{% elif stream == "ul" %}
+        <ul>
+            {% for prof in profs %}
+                <li style="font-size: 30px">{{ prof }}</li>
+            {% endfor %}</ul>
+{% else %}
+    <h1 style="width=300px; margin-left: auto; margin-right">Error</h1>
+{% endif %}
+{% endblock %}
