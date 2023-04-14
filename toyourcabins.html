@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block block_1 %}
+{% set user_list = params %}
+<div class="container">
+    <h1>По каютам!</h1>
+    <ul style="list-style-type:none">
+    {% for user in user_list %}
+    <li>{{ user }} - Каюта№{{ loop.index }} {% if loop.first %} - Каюта капитана {% endif %}
+    </li>
+    {% endfor %}
+</ul>
+</div>
+{% endblock %}
