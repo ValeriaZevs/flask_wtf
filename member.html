@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block block_1 %}
+{% set s = sp | random %}
+<h2>{{ s['name'] }}</h2><br>
+<img src=s['pic'] width="500" height="500">
+<h4>{{ s['prof'] }}</h4><br>
+{% endblock %}

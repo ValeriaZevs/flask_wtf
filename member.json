@@ -1,0 +1,19 @@
+{
+    "members": [
+        {
+            "name": "Jhon",
+            "pic": "static/img/MARS.png",
+            "prof": "astronaut"
+        },
+        {
+            "name": "Liza",
+            "pic": "static/img/MARS.png",
+            "prof": "doctor"
+        },
+        {
+            "name": "Ben",
+            "pic": "static/img/MARS.png",
+            "prof": "dog"
+        }
+    ]
+}
